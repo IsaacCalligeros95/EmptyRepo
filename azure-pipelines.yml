@@ -10,6 +10,10 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- task: OctoInstaller@5
+  inputs:
+    version: '5'
+    
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
