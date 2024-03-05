@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: octopusdeploy.octopus-deploy-build-release-tasks.octopus-pack.OctopusPack@4.2.492
+- task: OctopusPack@4
   displayName: 'Package test'
   inputs:
     PackageId: test
